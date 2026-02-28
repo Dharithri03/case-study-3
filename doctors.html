@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors - HealthCare</title>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JS -->
+    <script src="js/main.js"></script>
+    <script src="js/doctors.js" defer></script>
+</head>
+
+<body>
+
+    <main class="container" style="padding-top: 4rem;">
+        <div class="section-header">
+            <h1>Our Medical Specialists</h1>
+            <p>Search and filter our expert doctors to find the right care for you.</p>
+        </div>
+
+        <!-- Filters Section -->
+        <div class="filters">
+            <div class="form-group search-input">
+                <input type="text" id="doctorSearch" placeholder="Search by name or specialization...">
+            </div>
+            <div class="form-group">
+                <select id="deptFilter">
+                    <option value="all">All Departments</option>
+                    <option value="Cardiology">Cardiology</option>
+                    <option value="Neurology">Neurology</option>
+                    <option value="Pediatrics">Pediatrics</option>
+                    <option value="Dermatology">Dermatology</option>
+                    <option value="General Medicine">General Medicine</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Doctor Listing -->
+        <div class="doctor-grid" id="doctorListing">
+            <!-- Dynamically Populated -->
+        </div>
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

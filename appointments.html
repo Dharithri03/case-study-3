@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - HealthCare</title>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JS -->
+    <script src="js/main.js"></script>
+    <script src="js/appointments.js" defer></script>
+</head>
+
+<body>
+
+    <main class="container" style="padding-top: 4rem;">
+        <div class="section-header">
+            <h1>Manage Appointments</h1>
+            <p>Book a new appointment or manage your existing ones.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 4rem;">
+            <!-- Booking Form -->
+            <div class="card">
+                <h3>Book Now</h3>
+                <form id="appointmentForm" style="margin-top: 1.5rem;">
+                    <div class="form-group">
+                        <label for="patientName">Patient Name</label>
+                        <input type="text" id="patientName" placeholder="Enter patient name" required readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="doctorSelect">Select Doctor</label>
+                        <select id="doctorSelect" required>
+                            <option value="">Choose a specialist</option>
+                            <option value="Dr. James Smith">Dr. James Smith (Cardiology)</option>
+                            <option value="Dr. Sarah Connor">Dr. Sarah Connor (Neurology)</option>
+                            <option value="Dr. Robert Wilson">Dr. Robert Wilson (Pediatrics)</option>
+                            <option value="Dr. Emily Davis">Dr. Emily Davis (Dermatology)</option>
+                            <option value="Dr. Michael Brown">Dr. Michael Brown (General Medicine)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Select Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Select Time</label>
+                        <input type="time" id="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reason">Reason for Visit</label>
+                        <textarea id="reason" rows="3" placeholder="Symptoms or reason..."></textarea>
+                    </div>
+                    <button type="submit" class="btn auth-submit">Book Appointment</button>
+                </form>
+            </div>
+
+            <!-- Appointments List -->
+            <div>
+                <h3>Your Booked Appointments</h3>
+                <table class="appointments-table">
+                    <thead>
+                        <tr>
+                            <th>Doctor</th>
+                            <th>Date & Time</th>
+                            <th>Reason</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="appointmentList">
+                        <!-- Dynamically filled -->
+                    </tbody>
+                </table>
+                <div id="noAppointments" style="text-align: center; margin-top: 2rem; display: none;">
+                    <p>No appointments booked yet.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

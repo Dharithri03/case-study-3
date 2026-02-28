@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare - Your Health, Our Priority</title>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</head>
+<body>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="hero container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>Exceptional Care for Every Patient.</h1>
+                    <p>At HealthCare Clinic, we combine cutting-edge medical technology with compassionate care to ensure you get the best treatment possible.</p>
+                    <div class="hero-btns">
+                        <a href="appointments.html" class="btn cta-primary">Book Appointment</a>
+                        <a href="doctors.html" class="btn cta-secondary">Meet Our Doctors</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                   <img src="https://images.unsplash.com/photo-1576091160550-217359f42f8c?auto=format&fit=crop&q=80&w=1470" alt="Doctor providing care">
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section (Premium Feel) -->
+        <section class="container" style="padding-bottom: 6rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 4rem; text-align: center;">
+                <div class="card">
+                    <h3 style="font-size: 2.5rem; color: var(--primary);">15+</h3>
+                    <p>Years Excellence</p>
+                </div>
+                <div class="card">
+                    <h3 style="font-size: 2.5rem; color: var(--primary);">20k+</h3>
+                    <p>Happy Patients</p>
+                </div>
+                <div class="card">
+                    <h3 style="font-size: 2.5rem; color: var(--primary);">50+</h3>
+                    <p>Expert Doctors</p>
+                </div>
+                <div class="card">
+                    <h3 style="font-size: 2.5rem; color: var(--primary);">10+</h3>
+                    <p>Specialized Depts</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brief About Section -->
+        <section id="about" class="container" style="padding-bottom: 6rem;">
+            <div class="section-header">
+                <h2>Our Mission & Vision</h2>
+                <p>We are dedicated to providing high-quality accessible healthcare. Our clinic focuses on preventive medicine and personalized care plans.</p>
+            </div>
+            
+            <div class="services-grid">
+               <div class="card service-card">
+                  <div class="service-icon"><i data-lucide="shield-plus"></i></div>
+                  <h3>Advanced Diagnostics</h3>
+                  <p>State of the art lab and imaging facilities for accurate results.</p>
+               </div>
+               <div class="card service-card">
+                  <div class="card service-icon"><i data-lucide="clock"></i></div>
+                  <h3>24/7 Emergency</h3>
+                  <p>Ready to help anytime, our dedicated team is on standby 24 hours.</p>
+               </div>
+               <div class="card service-card">
+                  <div class="service-icon"><i data-lucide="users"></i></div>
+                  <h3>Specialist Consultation</h3>
+                  <p>Expertise across Cardiology, Neurology, Pediatrics and more.</p>
+               </div>
+               <div class="card service-card">
+                  <div class="service-icon"><i data-lucide="heart"></i></div>
+                  <h3>Patient First</h3>
+                  <p>Compassionate care tailored to your unique healthcare needs.</p>
+               </div>
+            </div>
+        </section>
+
+        <!-- Featured Doctors Preview -->
+        <section id="doctors" class="container">
+            <div class="section-header">
+                <h2>Meet Our Top Specialists</h2>
+                <p>Choose from our highly qualified and experienced medical professionals.</p>
+            </div>
+            
+            <div class="doctor-grid" id="featuredDoctors">
+                <!-- Will be populated if needed, or static for landing -->
+                <div class="card doctor-card">
+                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b1a8?auto=format&fit=crop&q=80&w=200&h=200" class="doctor-img" alt="Dr Smith">
+                    <span class="doctor-spec">Cardiologist</span>
+                    <h3>Dr. James Smith</h3>
+                    <p class="doctor-exp">12+ Years Experience</p>
+                    <span class="doctor-status status-available">Available</span>
+                    <a href="appointments.html" class="btn auth-btn" style="width:100%; display:block; text-align:center;">Book Now</a>
+                </div>
+                <div class="card doctor-card">
+                    <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&q=80&w=200&h=200" class="doctor-img" alt="Dr Sarah">
+                    <span class="doctor-spec">Neurologist</span>
+                    <h3>Dr. Sarah Connor</h3>
+                    <p class="doctor-exp">10+ Years Experience</p>
+                    <span class="doctor-status status-available">Available</span>
+                    <a href="appointments.html" class="btn auth-btn" style="width:100%; display:block; text-align:center;">Book Now</a>
+                </div>
+                <div class="card doctor-card">
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=200&h=200" class="doctor-img" alt="Dr Wilson">
+                    <span class="doctor-spec">Pediatrician</span>
+                    <h3>Dr. Robert Wilson</h3>
+                    <p class="doctor-exp">15+ Years Experience</p>
+                    <span class="doctor-status status-busy">Busy</span>
+                    <a href="appointments.html" class="btn auth-btn" style="width:100%; display:block; text-align:center;">View Bio</a>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+               <a href="doctors.html" style="color: var(--primary); font-weight: 600; text-decoration: underline;">View All Doctors</a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
